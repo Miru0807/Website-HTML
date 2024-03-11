@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Chestionar</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="styles.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<header>
+			<h1>Totul despre cafea</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="prajit.html">Prajit</a></li>
+					<li><a href="macinat.html">Macinat</a></li>
+					<li><a href="preparare.html">Preparare</a></li>
+					<li><a href="bauturi.html">Bauturi</a></li>
+					<li><a href="chestionar.html">Chestionar</a></li>
+				</ul>
+			</nav>
+		</header>
+		<h1>Chestionar Cafea</h1>
+		<aside>
+			<figure>
+				<img src="images/espresso.jpg" alt="a cup of espresso"/>
+			</figure>
+		</aside>
+		<form action="coffee-survey.php" method="post">
+			<fieldset>
+				<legend>Informatii personale</legend>
+				Nume<br/>
+				<input type="text" name="name" required size="40"/>
+				<br/>
+				Adresa de Email<br/>
+				<input type="email" name="email" required placeholder="enter a valid email address" size="40"/>
+				<br/>
+			</fieldset>
+			<fieldset>
+				<legend>Preferintele tale in materie de cafea</legend>
+				Spune-ne cum prepari cafeaua.<br/>
+				<textarea name="preparation" cols="40" rows="6"></textarea>
+				<br/><br/>
+				Macini boabele de cafea?<br/>
+				<input type="radio" name="grind" value="yes" />da<br/>
+				<input type="radio" name="grind" value="no" />nu<br/>
+
+				Cum bei cafeaua?<br/>
+				<input type="checkbox" name="drink" value="sugar" />cu zahar<br/>
+				<input type="checkbox" name="drink" value="cream" />cu crema<br/>
+				<br/>
+				Care este bautura ta preferata?<br/>
+				<select name="favorite">
+				<option value="">selecteaza o bautura</option>
+				<option value="drip">drip coffee</option>
+				<option value="french">french press</option>
+				<option value="espresso">espresso</option>
+				<option value="latte">latte</option>
+				<option value="flavored">flavored</option>
+				</select>
+			</fieldset>
+		</form>
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="prajit.html">Prajit</a></li>
+					<li><a href="macinat.html">Macinat</a></li>
+					<li><a href="preparare.html">Preparare</a></li>
+					<li><a href="bauturi.html">Bauturi</a></li>
+					<li><a href="chestionar.html">Chestionar</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
+</html>
